@@ -23,7 +23,7 @@ https://github.com/scc-pi/test-dev-env.git
 
 > Open Positron.
 
-> Create a *New Folder from Git…* (*File* \> *New Folder from Git…*):
+> Create a new folder from Git (*File* \> *New Folder from Git…*):
 
 ![](resources/new-folder-git.jpg)
 
@@ -83,7 +83,7 @@ Testing:
 - Python packages  
 - Quarto
 
-> Open ‘test-page.qmd’:
+> Open `test-page.qmd`:
 
 ![](resources/qmd-open.jpg)
 
@@ -99,9 +99,9 @@ Testing:
 
 ![](resources/terminal-output.jpg)
 
-> The Positron defualt is for the HTML output to be shown in a preview
-> pane. Alternatively you can check the output by opening the
-> ‘test_page.html in your browser’.
+> The Positron default is for the HTML output to be shown in a preview
+> pane. Alternatively, you can check the output by opening the
+> `test_page.html` in your browser.
 
 # Appendix
 
