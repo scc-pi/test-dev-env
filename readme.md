@@ -8,19 +8,23 @@ environments e.g. using Python for data analysis.
 
 # Clone repo
 
-Copy the HTTPS web URL for the
-[github.com/scc-pi/test-dev-env](https://github.com/scc-pi/test-dev-env)
-repo.
+> Copy the HTTPS web URL for the
+> [github.com/scc-pi/test-dev-env](https://github.com/scc-pi/test-dev-env)
+> repo.
 
 ![](resources/repo-web-url.jpg)
 
 https://github.com/scc-pi/test-dev-env.git
 
-Open Positron.
+> Open Positron.
 
-## 
+> Create a *New Folder from Git…* (*File* \> *New Folder from Git…*):
 
-Create a *New Folder from Git…*
+![](resources/new-folder-git.jpg)
+
+> Paste the web URL for the repo:
+
+![](resources/paste-repo-url.jpg)
 
 # Appendix
 
