@@ -1,0 +1,41 @@
+---
+title: "Test page"
+author: "Laurie Platt"
+date: last-modified
+date-format: "[Last updated ] DD MMMM, YYYY"
+format:
+  html:
+    code-tools: true
+    code-fold: true
+    toc: true
+    toc-location: left
+    toc-depth: 5
+    toc-expand: 3
+    number-sections: true
+    fig-cap-location: top
+execute:
+  warning: false
+  message: false
+include-in-header:
+  - text: |
+      <style>
+        .table {
+          width: auto;
+        }
+      </style>
+---
+
+Simple page to test installation and use of a Python package. 
+
+Change01
+
+```{python}
+#| label: setup
+#| context: setup
+
+import seaborn as sns
+
+iris = sns.load_dataset('iris')
+iris.head()
+```
+
