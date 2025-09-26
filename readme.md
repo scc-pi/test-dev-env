@@ -8,6 +8,11 @@ environments e.g. using Python for data analysis.
 
 # Clone repo
 
+Testing:
+
+- Positron  
+- Git
+
 > Copy the HTTPS web URL for the
 > [github.com/scc-pi/test-dev-env](https://github.com/scc-pi/test-dev-env)
 > repo.
@@ -25,6 +30,78 @@ https://github.com/scc-pi/test-dev-env.git
 > Paste the web URL for the repo:
 
 ![](resources/paste-repo-url.jpg)
+
+> In the Explorer pane you should see a few files from the repo:
+
+![](resources/explorer-few-files.jpg)
+
+# Create virtual environment
+
+Testing:
+
+- Positron  
+- Python  
+- Venv  
+- Python package installation
+
+> To create a new virtual environment, from the Command Palette
+> (*Ctrl* + *Shift* + *P*) start typing “Python: Create Environment” and
+> select *Python: Create Environment…*:
+
+![](resources/cmd-palette-create-env.jpg)
+
+> Select *venv* as the environment type:
+
+![](resources/venv-select.jpg)
+
+> Select a Python interpreter:
+
+![](resources/python-interpreter-select.jpg)
+
+> Select the dependencies (Python packages) to install by checking
+> `requirements.txt` file tick box:
+
+![](resources/requirements-select.jpg)
+
+> Wait while the environment is created:
+
+![](resources/creating-env.jpg)
+
+> Once it’s done you should get a notification and you should also see
+> that *venv* is mentioned in the current interpreter selection:
+
+![](resources/env-created.jpg)
+
+![](resources/selected-interpreter-venv.jpg)
+
+# Render Quarto document
+
+Testing:
+
+- Positron  
+- Python  
+- Python packages  
+- Quarto
+
+> Open ‘test-page.qmd’:
+
+![](resources/qmd-open.jpg)
+
+> From the Command Palette select *Quarto: Render Document*:
+
+![](resources/qmd-render.jpg)
+
+> Select *Render HTML*:
+
+![](resources/render-html.jpg)
+
+> The terminal pane will detail progress:
+
+![](resources/terminal-output.jpg)
+
+> The Positron defualt is for the HTML output to be shown in a preview
+> pane. Alternatively you can check the output by opening the
+> ‘test_page.html in your browser’.
 
 # Appendix
 

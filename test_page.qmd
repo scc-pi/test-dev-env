@@ -27,8 +27,6 @@ include-in-header:
 
 Simple page to test installation and use of a Python package. 
 
-Change01
-
 ```{python}
 #| label: setup
 #| context: setup
