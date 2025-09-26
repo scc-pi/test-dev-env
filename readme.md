@@ -1,0 +1,29 @@
+# Test Development Environment
+
+
+# Introduction
+
+The purpose of this repo is to help with testing of development
+environments e.g. using Python for data analysis.
+
+# Clone repo
+
+Copy the HTTPS web URL for the
+[github.com/scc-pi/test-dev-env](https://github.com/scc-pi/test-dev-env)
+repo.
+
+![](resources/repo-web-url.jpg)
+
+https://github.com/scc-pi/test-dev-env.git
+
+Open Positron.
+
+## 
+
+Create a *New Folder from Git…*
+
+# Appendix
+
+## Update readme
+
+The `readme.md` file is generated via `readme.qmd`.
