@@ -6,6 +6,15 @@
 The purpose of this repo is to help with testing of development
 environments e.g. using Python for data analysis.
 
+# Git
+
+To test whether Git is installed, open a terminal, type `git --version`
+and press enter.
+
+**Resource:**  
+[Setting up Git (NHS Service
+Manual)](https://prototype-kit.service-manual.nhs.uk/how-tos/git)
+
 # Clone repo
 
 Testing:
