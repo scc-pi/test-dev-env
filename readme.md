@@ -8,12 +8,19 @@ environments e.g. using Python for data analysis.
 
 # Git
 
-To test whether Git is installed, open a terminal, type `git --version`
-and press enter.
+> To test whether Git is installed, open a terminal, type
+> `git --version` and press enter.
 
 **Resource:**  
 [Setting up Git (NHS Service
 Manual)](https://prototype-kit.service-manual.nhs.uk/how-tos/git)
+
+# Python
+
+> To test whether Python is installed, open a terminal, type `py -0` and
+> press enter.
+
+![](resources/python-version.jpg)
 
 # Clone repo
 
