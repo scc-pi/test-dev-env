@@ -48,150 +48,22 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="test-development-environment" class="level1">
 <h1>Test Development Environment</h1>
-</section>
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>The purpose of this repo is to help with testing of development environments e.g.&nbsp;using Python for data analysis.</p>
 </section>
-<section id="git" class="level1">
-<h1>Git</h1>
-<blockquote class="blockquote">
-<p>To test whether Git is installed, open a terminal, type <code>git --version</code>, and press enter.</p>
-</blockquote>
-<p><strong>Resource:</strong><br>
-<a href="https://prototype-kit.service-manual.nhs.uk/how-tos/git">Setting up Git (NHS Service Manual)</a></p>
+<section id="notes-on-testing" class="level2">
+<h2 class="anchored" data-anchor-id="notes-on-testing">Notes on testing</h2>
+<p>Notes on testing: <a href="https://scc-pi.github.io/test-dev-env">scc-pi.github.io/test-dev-env</a></p>
+<p>The notes are rendered to HTML using <a href="https://quarto.org/">Quarto</a>, specifically the <code>dev_env_testing.qmd</code> file.</p>
+<p>The notes are served via <a href="https://docs.github.com/en/pages">GitHub Pages</a>. They are rendered locally rather than via <a href="https://docs.github.com/en/actions/get-started/understand-github-actions">GitHub Actions</a> i.e.&nbsp;after any changes to the <code>.qmd</code> file you need to render the HTML before making a pull request.</p>
 </section>
-<section id="python" class="level1">
-<h1>Python</h1>
-<blockquote class="blockquote">
-<p>To test whether Python is installed, open a terminal, type <code>py --version</code>, and press enter.</p>
-</blockquote>
-<p><img src="resources/python-version.jpg" class="img-fluid"></p>
+<section id="updating-the-repo" class="level2">
+<h2 class="anchored" data-anchor-id="updating-the-repo">Updating the repo</h2>
+<p>Don’t make changes directly to <code>main</code>. Make changes by creating a new branch and submitting a pull request.</p>
 </section>
-<section id="python-packages" class="level1">
-<h1>Python packages</h1>
-<blockquote class="blockquote">
-<p>To test whether <a href="https://packaging.python.org/en/latest/key_projects/#pip">pip</a> is available, open a terminal, type <code>py -m pip --version</code>, and press enter.</p>
-</blockquote>
-<p><img src="resources/pip-available.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>To test whether we can install a Python package (e.g.&nbsp;pandas), open a terminal, type <code>py -m pip install "pandas"</code>, and press enter.</p>
-</blockquote>
-<p><img src="resources/pip-install-pandas.jpg" class="img-fluid"></p>
-<p><strong>Resources:</strong></p>
-<p><a href="https://packaging.python.org/en/latest/tutorials/installing-packages/">Installing Python packages</a></p>
-</section>
-<section id="quarto" class="level1">
-<h1>Quarto</h1>
-<p>Quarto is included in the Positron install.</p>
-<blockquote class="blockquote">
-<p>To test the Quarto installation, open a terminal, type <code>quarto check</code>, and press enter.</p>
-</blockquote>
-<p><img src="resources/quarto-check.jpg" class="img-fluid"></p>
-</section>
-<section id="clone-repo" class="level1">
-<h1>Clone repo</h1>
-<p>Testing:</p>
-<ul>
-<li>Positron<br>
-</li>
-<li>Git</li>
-</ul>
-<blockquote class="blockquote">
-<p>Copy the HTTPS web URL for the <a href="https://github.com/scc-pi/test-dev-env">github.com/scc-pi/test-dev-env</a> repo.</p>
-</blockquote>
-<p><img src="resources/repo-web-url.jpg" class="img-fluid"></p>
-<p>https://github.com/scc-pi/test-dev-env.git</p>
-<blockquote class="blockquote">
-<p>Open Positron.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Create a new folder from Git (<em>File</em> &gt; <em>New Folder from Git…</em>):</p>
-</blockquote>
-<p><img src="resources/new-folder-git.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>Paste the web URL for the repo:</p>
-</blockquote>
-<p><img src="resources/paste-repo-url.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>In the Explorer pane you should see a few files from the repo:</p>
-</blockquote>
-<p><img src="resources/explorer-few-files.jpg" class="img-fluid"></p>
-</section>
-<section id="create-virtual-environment" class="level1">
-<h1>Create virtual environment</h1>
-<p>Testing:</p>
-<ul>
-<li>Positron<br>
-</li>
-<li>Python<br>
-</li>
-<li>Venv<br>
-</li>
-<li>Python package installation</li>
-</ul>
-<blockquote class="blockquote">
-<p>To create a new virtual environment, from the Command Palette (<em>Ctrl</em> + <em>Shift</em> + <em>P</em>) start typing “Python: Create Environment” and select <em>Python: Create Environment…</em>:</p>
-</blockquote>
-<p><img src="resources/cmd-palette-create-env.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>Select <em>venv</em> as the environment type:</p>
-</blockquote>
-<p><img src="resources/venv-select.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>Select a Python interpreter:</p>
-</blockquote>
-<p><img src="resources/python-interpreter-select.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>Select the dependencies (Python packages) to install by checking <code>requirements.txt</code> file tick box:</p>
-</blockquote>
-<p><img src="resources/requirements-select.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>Wait while the environment is created:</p>
-</blockquote>
-<p><img src="resources/creating-env.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>Once it’s done you should get a notification and you should also see that <em>venv</em> is mentioned in the current interpreter selection:</p>
-</blockquote>
-<p><img src="resources/env-created.jpg" class="img-fluid"></p>
-<p><img src="resources/selected-interpreter-venv.jpg" class="img-fluid"></p>
-</section>
-<section id="render-quarto-document" class="level1">
-<h1>Render Quarto document</h1>
-<p>Testing:</p>
-<ul>
-<li>Positron<br>
-</li>
-<li>Python<br>
-</li>
-<li>Python packages<br>
-</li>
-<li>Quarto</li>
-</ul>
-<blockquote class="blockquote">
-<p>Open <code>test-page.qmd</code>:</p>
-</blockquote>
-<p><img src="resources/qmd-open.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>From the Command Palette select <em>Quarto: Render Document</em>:</p>
-</blockquote>
-<p><img src="resources/qmd-render.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>Select <em>Render HTML</em>:</p>
-</blockquote>
-<p><img src="resources/render-html.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>The terminal pane will detail progress:</p>
-</blockquote>
-<p><img src="resources/terminal-output.jpg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>The Positron default is for the HTML output to be shown in a preview pane. Alternatively, you can check the output by opening the <code>test_page.html</code> in your browser.</p>
-</blockquote>
-</section>
-<section id="appendix" class="level1">
-<h1>Appendix</h1>
-<section id="update-readme" class="level2">
-<h2 class="anchored" data-anchor-id="update-readme">Update readme</h2>
+<section id="updating-the-readme" class="level2">
+<h2 class="anchored" data-anchor-id="updating-the-readme">Updating the readme</h2>
 <p>The <code>readme.md</code> file is generated via <code>readme.qmd</code>.</p>
 </section>
 </section>

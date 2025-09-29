@@ -3,136 +3,22 @@ title: "Test Development Environment"
 format: gfm
 ---
 
-# Introduction 
+## Introduction 
 
 The purpose of this repo is to help with testing of development environments e.g. using Python for data analysis.  
 
-# Git
+## Notes on testing
 
-> To test whether Git is installed, open a terminal, type `git --version`, and press enter.
+Notes on testing: [scc-pi.github.io/test-dev-env](https://scc-pi.github.io/test-dev-env)
 
-**Resource:**  
-[Setting up Git (NHS Service Manual)](https://prototype-kit.service-manual.nhs.uk/how-tos/git)
+The notes are rendered to HTML using [Quarto](https://quarto.org/), specifically the `dev_env_testing.qmd` file.    
 
-# Python
+The notes are served via [GitHub Pages](https://docs.github.com/en/pages). They are rendered locally rather than via [GitHub Actions](https://docs.github.com/en/actions/get-started/understand-github-actions) i.e. after any changes to the `.qmd` file you need to render the HTML before making a pull request. 
 
-> To test whether Python is installed, open a terminal, type `py --version`, and press enter.
+## Updating the repo
 
-![](resources/python-version.jpg)  
+Don't make changes directly to `main`. Make changes by creating a new branch and submitting a pull request.    
 
-# Python packages  
-
-> To test whether [pip](https://packaging.python.org/en/latest/key_projects/#pip) is available, open a terminal, type `py -m pip --version`, and press enter.
-
-![](resources/pip-available.jpg)  
-
-> To test whether we can install a Python package (e.g. pandas), open a terminal, type `py -m pip install "pandas"`, and press enter.  
-
-![](resources/pip-install-pandas.jpg)  
-
-**Resources:**  
-
-[Installing Python packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
-
-# Quarto  
-
-Quarto is included in the Positron install.  
-
-> To test the Quarto installation, open a terminal, type `quarto check`, and press enter.
-
-![](resources/quarto-check.jpg)  
-
-# Clone repo
-
-Testing:  
-
-* Positron  
-* Git
-
-> Copy the HTTPS web URL for the [github.com/scc-pi/test-dev-env](https://github.com/scc-pi/test-dev-env) repo.
-
-![](resources/repo-web-url.jpg)  
-
-https://github.com/scc-pi/test-dev-env.git
-
-> Open Positron.
-
-> Create a new folder from Git (*File* > *New Folder from Git...*):
-
-![](resources/new-folder-git.jpg)  
-
-> Paste the web URL for the repo:  
-
-![](resources/paste-repo-url.jpg)  
-
-> In the Explorer pane you should see a few files from the repo:  
-
-![](resources/explorer-few-files.jpg)
-
-# Create virtual environment
-
-Testing:  
-
-* Positron  
-* Python  
-* Venv  
-* Python package installation
-
-> To create a new virtual environment, from the Command Palette (*Ctrl* + *Shift* + *P*) start typing "Python: Create Environment" and select *Python: Create Environment...*: 
-
-![](resources/cmd-palette-create-env.jpg)  
-
-> Select *venv* as the environment type:  
-
-![](resources/venv-select.jpg)  
-
-> Select a Python interpreter:  
-
-![](resources/python-interpreter-select.jpg)  
-
-> Select the dependencies (Python packages) to install by checking `requirements.txt` file tick box:  
-
-![](resources/requirements-select.jpg)
-
-> Wait while the environment is created:  
-
-![](resources/creating-env.jpg)
-
-> Once it's done you should get a notification and you should also see that *venv* is mentioned in the current interpreter selection:  
-
-![](resources/env-created.jpg)  
-
-![](resources/selected-interpreter-venv.jpg)
-
-# Render Quarto document
-
-Testing:  
-
-* Positron  
-* Python  
-* Python packages  
-* Quarto  
-
-> Open `test-page.qmd`:  
-
-![](resources/qmd-open.jpg)  
-
-> From the Command Palette select *Quarto: Render Document*:  
-
-![](resources/qmd-render.jpg)
-
-> Select *Render HTML*:  
-
-![](resources/render-html.jpg)
-
-> The terminal pane will detail progress:  
-
-![](resources/terminal-output.jpg)
-
-> The Positron default is for the HTML output to be shown in a preview pane. Alternatively, you can check the output by opening the `test_page.html` in your browser.    
-
-# Appendix  
-
-## Update readme
+## Updating the readme
 
 The `readme.md` file is generated via `readme.qmd`.
