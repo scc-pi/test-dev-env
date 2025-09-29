@@ -20,6 +20,14 @@ The purpose of this repo is to help with testing of development environments e.g
 
 ![](resources/python-version.jpg)  
 
+# Quarto  
+
+Quarto is as part of the Positron install.  
+
+> To test the Quarto installation, open a terminal, type `quarto check` and press enter.
+
+![](resources/quarto-check.jpg)  
+
 # Clone repo
 
 Testing:  

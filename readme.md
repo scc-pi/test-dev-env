@@ -22,6 +22,15 @@ Manual)](https://prototype-kit.service-manual.nhs.uk/how-tos/git)
 
 ![](resources/python-version.jpg)
 
+# Quarto
+
+Quarto is as part of the Positron install.
+
+> To test the Quarto installation, open a terminal, type `quarto check`
+> and press enter.
+
+![](resources/quarto-check.jpg)
+
 # Clone repo
 
 Testing:
