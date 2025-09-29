@@ -9,7 +9,7 @@ environments e.g. using Python for data analysis.
 # Git
 
 > To test whether Git is installed, open a terminal, type
-> `git --version` and press enter.
+> `git --version`, and press enter.
 
 **Resource:**  
 [Setting up Git (NHS Service
@@ -17,16 +17,35 @@ Manual)](https://prototype-kit.service-manual.nhs.uk/how-tos/git)
 
 # Python
 
-> To test whether Python is installed, open a terminal, type `py -0` and
-> press enter.
+> To test whether Python is installed, open a terminal, type
+> `py --version`, and press enter.
 
 ![](resources/python-version.jpg)
 
+# Python packages
+
+> To test whether
+> [pip](https://packaging.python.org/en/latest/key_projects/#pip) is
+> available, open a terminal, type `py -m pip --version`, and press
+> enter.
+
+![](resources/pip-available.jpg)
+
+> To test whether we can install a Python package (e.g. pandas), open a
+> terminal, type `py -m pip install "pandas"`, and press enter.
+
+![](resources/pip-install-pandas.jpg)
+
+**Resources:**
+
+[Installing Python
+packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+
 # Quarto
 
-Quarto is as part of the Positron install.
+Quarto is included in the Positron install.
 
-> To test the Quarto installation, open a terminal, type `quarto check`
+> To test the Quarto installation, open a terminal, type `quarto check`,
 > and press enter.
 
 ![](resources/quarto-check.jpg)
