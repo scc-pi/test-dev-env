@@ -28,6 +28,25 @@ execute:
 
 The purpose of this repo is to help with testing of development environments e.g. using Python for data analysis.  
 
+We'll first test the components individually, before testing how the components integrate within an IDE.  
+
+## PATH
+
+The PATH environment variable specifies the set of directories used to search for executable (.exe) files.  
+
+::: {.column-margin}
+**Resource:**  
+[path command (MS Learn)](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/path)
+:::  
+
+It's worth noting the PATH of the vanilla AVD prior to ADMIN installation of Python, Git, etc. 
+
+Note the PATH again before any end user configuration or installation.
+
+> To get PATH, open a terminal, type `echo %PATH%`, and press enter.
+
+![](resources/path-echo.png)  
+
 ## Git
 
 > To test whether Git is installed, open a terminal, type `git --version`, and press enter.
@@ -37,11 +56,18 @@ The purpose of this repo is to help with testing of development environments e.g
 [Setting up Git (NHS Service Manual)](https://prototype-kit.service-manual.nhs.uk/how-tos/git)
 :::  
 
+![](resources/git-version.png)  
+
 ## Python
 
 > To test whether Python is installed, open a terminal, type `py --version`, and press enter.
 
-![](resources/python-version.jpg)  
+::: {.column-margin}
+**Resource:**  
+[Using the `py` command (Real Python)](https://realpython.com/run-python-scripts/#using-the-python-command)
+:::  
+
+![](resources/py-version.png)  
 
 ## Python packages  
 
