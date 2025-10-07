@@ -57,6 +57,8 @@ PATH is a combination of system and user PATH environment variables. We can see 
 
 ## Python
 
+Python is installed by IT.  
+
 ### Python installation
 
 > To test whether Python is installed, open a terminal, type `python --version`, and press enter.
@@ -66,9 +68,9 @@ PATH is a combination of system and user PATH environment variables. We can see 
 [Using the `python` command (Real Python)](https://realpython.com/run-python-scripts/#using-the-python-command)
 :::  
 
-![](resources/python-version.png){width=400}  
+![](resources/python-version.png){width=300}  
 
-> To find where Python is installed, open a terminal, type `where python`, and press enter.
+> To find where Python interpretter (python.exe) is installed, open a terminal, type `where python`, and press enter.
 
 ![](resources/python-where.png){width=400} 
 
@@ -80,31 +82,41 @@ PATH is a combination of system and user PATH environment variables. We can see 
 
 On Windows, the `py` command can be used in place of `python`. 
 
-When there are multiple versions of Python installed, using the `python` command is more ambiguous on Windows than other operating systems. Typing `python` may run whichever version was added to PATH last — which can get confusing.  
-
 ::: {.column-margin}
 **Resource:**  
 [Python Launcher for Windows (Python documentation)](https://docs.python.org/3/using/windows.html#python-launcher-for-windows)
 :::  
 
-The `py` command uses the Python Launcher for Windows, which is a utility that helps locate and execute different Python versions. 
+When there are multiple versions of Python installed, using the `python` command is more ambiguous on Windows than other operating systems. Typing `python` may run whichever version was added to PATH last — which can get confusing.  
+
+The `py` command uses the Python Launcher for Windows, which is a utility that helps locate and execute different Python versions. Python Launcher is included in the base Python Windows installation along with the Python interpretter.
 
 > To see where the Python Launcher is installed, open a terminal, type `where py`, and press enter.
 
-![](resources/py-where.png){width=400} 
+![](resources/py-where.png){width=350} 
 
 ## Python packages
 
-### Python package installation  
+Python packages are installed and managed by the user.
 
-> To test whether [pip](https://packaging.python.org/en/latest/key_projects/#pip) is available, open a terminal, type `py -m pip --version`, and press enter.
+### pip
+
+[Pip](https://packaging.python.org/en/latest/key_projects/#pip) is the most popular tool for installing Python packages and is included in the base Python installation along with the Python interpretter.  
 
 ::: {.column-margin}
 **Resource:**  
 [Installing Python packages (Python Packaging User Guide)](https://packaging.python.org/en/latest/tutorials/installing-packages/)
 :::
 
+> To test whether pip is available, open a terminal, type `py -m pip --version`, and press enter.
+
 ![](resources/pip-version.png){width=550}
+
+> To see where pip is installed, open a terminal, type `where pip`, and press enter.
+
+![](resources/pip-where.png){width=300}
+
+### Python package installation  
 
 > To test whether we can install a Python package (e.g. pandas), open a terminal, type `py -m pip install pandas`, and press enter.  
 
@@ -133,7 +145,7 @@ Project level is known as a "virtual environment" and is best practice. It is co
 
 ![](resources/packages-user.png){width=500}  
 
-When we installed the pandas Python package in the preceding section, the resulting message included "Defaulting to user installation becaise normal site-package is not writeable".   
+When we installed the pandas Python package in the preceding section, the resulting message included "Defaulting to user installation because normal site-package is not writeable".   
 
 > To see where the pandas Python package is installed, open a terminal, type `pip show pandas`, and press enter.  
 
@@ -141,17 +153,39 @@ When we installed the pandas Python package in the preceding section, the result
 ...  
 ![](resources/pandas-show2.png){width=500}  
 
+## Python projects
+
+Python projects are managed by the user. The simplest way to manage a Python project is for it to be contained within its own directory, i.e. one project = one folder. Albeit that one main project folder may have sub-folders.   
+
+### Project location
+
+Where an AVD, such as the Data Science AVD, is shared by several users, projects (repos) should be saved somewhere under the user profile: `%USERPROFILE%`. For example, `C:\Users\lp41455\repo`. If users are collaborating on the same repo this will be explicit about which copy of a repo belong to who. Additionally, a user can be confident no one else has changed a script in their repo, or read a confidential data file.
+
 ### venv
 
-*TODO*
+[venv](https://docs.python.org/3/library/venv.html) is a Python module included in the base Python installation.
+
+::: {.column-margin}
+**Resource:**  
+[Python Virtual Environments (Real Python)](https://realpython.com/python-virtual-environments-a-primer/)
+:::
+
+> To test creating a virtual environment using venv, open a terminal, navigate to a project folder (e.g. enter `cd repo\test-venv`), type `py -m venv .venv\`, and press enter.  
+
+![](resources/venv-create.png){width=350}  
+
 
 ## Positron  
 
 ### Positron installation  
 
+Positron is installed by IT.
+
 *TODO*
 
 ### Positron extensions
+
+Positron extensions are installed and managed by the user.
 
 *TODO*
 
@@ -167,6 +201,8 @@ Quarto is included in the Positron install.
 
 ### Git installation
 
+Git is installed by IT.  
+
 > To test whether Git is installed, open a terminal, type `git --version`, and press enter.
 
 ::: {.column-margin}
@@ -174,9 +210,15 @@ Quarto is included in the Positron install.
 [Setting up Git (NHS Service Manual)](https://prototype-kit.service-manual.nhs.uk/how-tos/git)
 :::  
 
-![](resources/git-version.png){width=400}  
+![](resources/git-version.png){width=350}  
+
+> To test initialising Git, open a terminal, navigate to a project folder (e.g. enter `cd repo\test-git`), type `git init`, and press enter.  
+
+![](resources/git-init.png){width=450}  
 
 ### Git config  
+
+Git is configured by the user.
 
 *TODO*
 
