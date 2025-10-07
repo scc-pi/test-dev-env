@@ -43,33 +43,56 @@ It's worth noting the PATH of the vanilla AVD prior to ADMIN installation of Pyt
 
 Note the PATH again before any end user configuration or installation.
 
-> To get PATH, open a terminal, type `echo %PATH%`, and press enter.
+> To get the PATH, open a terminal, type `echo %PATH%`, and press enter.
 
-![](resources/path-echo.png)  
+![](resources/path-echo.png){width=400}  
 
-## Git
+PATH is a combination of system and user PATH environment variables. We can see and edit the **user** (not system) PATH via *Edit environment variables for your account*:  
 
-> To test whether Git is installed, open a terminal, type `git --version`, and press enter.
+![](resources/env-vars.png){width=250}
 
-::: {.column-margin}
-**Resource:**  
-[Setting up Git (NHS Service Manual)](https://prototype-kit.service-manual.nhs.uk/how-tos/git)
-:::  
+![](resources/path-env-var.png){width=400}
 
-![](resources/git-version.png)  
+![](resources/edit-path.png){width=350}
 
-## Python
 
-> To test whether Python is installed, open a terminal, type `py --version`, and press enter.
+## Python installation
+
+> To test whether Python is installed, open a terminal, type `python --version`, and press enter.
 
 ::: {.column-margin}
 **Resource:**  
-[Using the `py` command (Real Python)](https://realpython.com/run-python-scripts/#using-the-python-command)
+[Using the `python` command (Real Python)](https://realpython.com/run-python-scripts/#using-the-python-command)
 :::  
 
-![](resources/py-version.png)  
+![](resources/python-version.png){width=400}  
 
-## Python packages  
+> To find where Python is installed, open a terminal, type `where python`, and press enter.
+
+![](resources/python-where.png){width=400} 
+
+## Multiple Python versions  
+
+*TODO: not a priority for the Windows 11 deadline.*
+
+## Python Launcher
+
+On Windows, the `py` command can be used in place of `python`. 
+
+When there are multiple versions of Python installed, using the `python` command is more ambiguous on Windows than other operating systems. Typing `python` may run whichever version was added to PATH last — which can get confusing.  
+
+::: {.column-margin}
+**Resource:**  
+[Python Launcher for Windows (Python documentation)](https://docs.python.org/3/using/windows.html#python-launcher-for-windows)
+:::  
+
+The `py` command uses the Python Launcher for Windows, which is a utility that helps locate and execute different Python versions. 
+
+> To see where the Python Launcher is installed, open a terminal, type `where py`, and press enter.
+
+![](resources/py-where.png){width=400} 
+
+## Python package installation  
 
 > To test whether [pip](https://packaging.python.org/en/latest/key_projects/#pip) is available, open a terminal, type `py -m pip --version`, and press enter.
 
@@ -78,13 +101,52 @@ Note the PATH again before any end user configuration or installation.
 [Installing Python packages (Python Packaging User Guide)](https://packaging.python.org/en/latest/tutorials/installing-packages/)
 :::
 
-![](resources/pip-available.jpg)  
+![](resources/pip-version.png){width=550}
 
-> To test whether we can install a Python package (e.g. pandas), open a terminal, type `py -m pip install "pandas"`, and press enter.  
+> To test whether we can install a Python package (e.g. pandas), open a terminal, type `py -m pip install pandas`, and press enter.  
 
-![](resources/pip-install-pandas.jpg)  
+![](resources/pip-install-pandas.png){width=550}  
+
+## Python package location  
+
+Python packages can be stored at three different levels:  
+
+::: {.column-margin}
+**Resource:**  
+[How to find python library path (edureka)](https://www.edureka.co/community/101278/how-do-find-the-location-of-my-python-site-packages-directory)
+:::
+
+1. global  
+1. user  
+1. project  
+
+Project level is known as a "virtual environment" and is best practice. It is covered under the venv heading below.
+
+> To see where Python packages are installed at the **global** level, open a terminal, type `py -c "import site; print(site.getsitepackages())"`, and press enter.  
+
+![](resources/packages-global.png){width=550}  
+
+> To see where Python packages are installed at the **user** level, open a terminal, type `py -m site --user-site`, and press enter.  
+
+![](resources/packages-user.png){width=500}  
+
+When we installed the pandas Python package in the preceding section, the resulting message included "Defaulting to user installation becaise normal site-package is not writeable".   
+
+> To see where the pandas Python package is installed, open a terminal, type `pip show pandas`, and press enter.  
+
+![](resources/pandas-show1.png){width=500}  
+...  
+![](resources/pandas-show2.png){width=500}  
 
 ## venv
+
+*TODO*
+
+## Positron installation  
+
+*TODO*
+
+## Positron extensions
 
 *TODO*
 
@@ -95,6 +157,21 @@ Quarto is included in the Positron install.
 > To test the Quarto installation, open a terminal, type `quarto check`, and press enter.
 
 ![](resources/quarto-check.jpg)  
+
+## Git
+
+> To test whether Git is installed, open a terminal, type `git --version`, and press enter.
+
+::: {.column-margin}
+**Resource:**  
+[Setting up Git (NHS Service Manual)](https://prototype-kit.service-manual.nhs.uk/how-tos/git)
+:::  
+
+![](resources/git-version.png){width=400}  
+
+## Git config  
+
+*TODO*
 
 ## Positron workflow
 
