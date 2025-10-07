@@ -55,8 +55,9 @@ PATH is a combination of system and user PATH environment variables. We can see 
 
 ![](resources/edit-path.png){width=350}
 
+## Python
 
-## Python installation
+### Python installation
 
 > To test whether Python is installed, open a terminal, type `python --version`, and press enter.
 
@@ -71,11 +72,11 @@ PATH is a combination of system and user PATH environment variables. We can see 
 
 ![](resources/python-where.png){width=400} 
 
-## Multiple Python versions  
+### Multiple Python versions  
 
 *TODO: not a priority for the Windows 11 deadline.*
 
-## Python Launcher
+### Python Launcher
 
 On Windows, the `py` command can be used in place of `python`. 
 
@@ -92,7 +93,9 @@ The `py` command uses the Python Launcher for Windows, which is a utility that h
 
 ![](resources/py-where.png){width=400} 
 
-## Python package installation  
+## Python packages
+
+### Python package installation  
 
 > To test whether [pip](https://packaging.python.org/en/latest/key_projects/#pip) is available, open a terminal, type `py -m pip --version`, and press enter.
 
@@ -107,7 +110,7 @@ The `py` command uses the Python Launcher for Windows, which is a utility that h
 
 ![](resources/pip-install-pandas.png){width=550}  
 
-## Python package location  
+### Python package location  
 
 Python packages can be stored at three different levels:  
 
@@ -138,15 +141,17 @@ When we installed the pandas Python package in the preceding section, the result
 ...  
 ![](resources/pandas-show2.png){width=500}  
 
-## venv
+### venv
 
 *TODO*
 
-## Positron installation  
+## Positron  
+
+### Positron installation  
 
 *TODO*
 
-## Positron extensions
+### Positron extensions
 
 *TODO*
 
@@ -160,6 +165,8 @@ Quarto is included in the Positron install.
 
 ## Git
 
+### Git installation
+
 > To test whether Git is installed, open a terminal, type `git --version`, and press enter.
 
 ::: {.column-margin}
@@ -169,7 +176,7 @@ Quarto is included in the Positron install.
 
 ![](resources/git-version.png){width=400}  
 
-## Git config  
+### Git config  
 
 *TODO*
 
