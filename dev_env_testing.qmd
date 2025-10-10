@@ -11,7 +11,7 @@ format:
     toc: true
     toc-location: left
     toc-depth: 4
-    toc-expand: 2
+    toc-expand: 1
     number-sections: true
     fig-cap-location: top
     code-links:
@@ -197,30 +197,84 @@ Quarto is included in the Positron install.
 
 ![](resources/quarto-check.jpg)  
 
+### Path 
+
+*TODO*
+
+### Jupyter
+
+*TODO*
+
+
 ## Git
 
 ### Git installation
 
 Git is installed by IT.  
 
-> To test whether Git is installed, open a terminal, type `git --version`, and press enter.
-
 ::: {.column-margin}
 **Resource:**  
 [Setting up Git (NHS Service Manual)](https://prototype-kit.service-manual.nhs.uk/how-tos/git)
 :::  
 
+> To test whether Git is installed, open a terminal, type `git --version`, and press enter.
+
 ![](resources/git-version.png){width=350}  
-
-> To test initialising Git, open a terminal, navigate to a project folder (e.g. enter `cd repo\test-git`), type `git init`, and press enter.  
-
-![](resources/git-init.png){width=450}  
 
 ### Git config  
 
 Git is configured by the user.
 
-*TODO*
+To configure your Git name and email address, from a terminal run:
+
+`git config --global user.email "Firstname.Lastname@sheffield.gov.uk"`  
+`git config --global user.name "Firstname Lastname"`
+
+To confirm the changes run:
+
+`git config --list`
+
+![](resources/git-config.png){width=450}  
+
+### Git initialise
+
+> To test initialising Git, open a terminal, navigate to a project folder (e.g. enter `cd repo\test-git`), type `git init`, and press enter.  
+
+![](resources/git-init.png){width=450}  
+
+### Git status
+
+> To check the git status open a terminal, navigate to the repo folder (e.g. enter `cd repo\test-git`), type `git status`, and press enter.  
+
+![](resources/git-status1.png){width=400}  
+
+### Git commit
+
+To test a Git commit:
+
+1. Add a test file (e.g. `test-commit.txt`) to the previously test report (e.g. `\repo\test-git`). Check git status.  
+
+![](resources/git-status2.png){width=450}  
+
+2. "Stage" the changes by running `git add .` from a terminal. Check git status.     
+
+![](resources/git-status3.png){width=300}  
+
+3. "Commit" the staged changes by running `git commit -m "First commit"` from a terminal. Check git status.    
+
+![](resources/git-status3.png){width=300}    
+
+
+### Git clone  
+
+> To test cloning a Git repo, open a terminal, navigate to where you want the repo created (e.g. enter `cd repo`), type `git clone https://github.com/scc-pi/test-dev-env.git`, and press enter.  
+
+::: {.column-margin}
+**Resource:**  
+[Cloning a repository (GitHub)](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+:::  
+
+![](resources/git-clone.png){width=450}  
 
 ## Positron workflow
 
